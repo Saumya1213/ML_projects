@@ -1,0 +1,6 @@
+paraphrase-mpnet-base-v2.ipynb: https://colab.research.google.com/drive/1FH3CzHsI_KCFaZnxbPXm6UJfRvfAG0oY?usp=sharing
+
+ColBERT: https://colab.research.google.com/drive/1taMY39fzSbGG_Xl5SaQ_ivBvPZKpZ3le?usp=sharing
+
+multilingual_e-5_large: https://colab.research.google.com/drive/1j1TLFOF_nsJoF3kRvDrm-gaDra3OQy8Y?usp=sharing
+

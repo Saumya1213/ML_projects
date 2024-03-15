@@ -1,0 +1,61 @@
+Link to Colab Notebook: https://colab.research.google.com/drive/1ikr9giv35uQa-Im09VQoR0pN0BiD3bh-?usp=sharing
+
+Data Ranking with FAISS and Cross-Encoder
+
+
+Description:
+
+This repository contains code for ranking data based on a query using FAISS for efficient similarity search and a cross-encoder model for reranking. The system takes a query and a dataset of items, creates embeddings using MPNet, performs approximate nearest neighbor search with FAISS, and finally reranks the top candidates using a cross-encoder model to improve relevance and accuracy.
+
+
+Usage:
+
+To use this code, follow these steps:
+
+Clone the repository to your local machine.
+Install the required dependencies using the provided command.
+Run the provided Python script to preprocess the data, create embeddings, perform ranking with FAISS, and rerank with the cross-encoder model.
+Requirements:
+
+Python 3.x
+PyTorch
+Transformers library from Hugging Face
+FAISS
+Pandas
+scikit-learn
+
+
+Dependencies:
+
+PyTorch: Provides deep learning tools and frameworks.
+Transformers: A library from Hugging Face that provides state-of-the-art pre-trained models for natural language processing tasks.
+FAISS: A library for efficient similarity search and clustering of dense vectors.
+Pandas: Used for data manipulation and analysis.
+scikit-learn: Offers machine learning algorithms and tools for ranking and evaluation.
+Language Models (LLM):
+
+MPNet (Multi-Parametric Nucleus Transformer) for creating embeddings.
+Cross-Encoder for reranking.
+
+
+Explanation:
+
+The provided Python code performs the following tasks:
+
+Data Preprocessing:
+
+Reads and preprocesses the input dataset containing items to be ranked.
+Tokenizes the text data and encodes it into embeddings using the MPNet model.
+FAISS Indexing:
+
+Constructs a FAISS index to perform approximate nearest neighbor search for efficient similarity search.
+Indexes the embeddings of the dataset items.
+Query Processing:
+
+Tokenizes and encodes the input query into embeddings using the MPNet model.
+Performs nearest neighbor search with FAISS to retrieve the top candidate items based on similarity to the query.
+Cross-Encoder Reranking:
+
+Uses a cross-encoder model to rerank the top candidate items obtained from FAISS.
+Encodes the query-item pairs into embeddings and predicts the relevance score for each pair.
+Reranks the candidate items based on the predicted relevance scores to improve relevance and accuracy.

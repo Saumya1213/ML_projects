@@ -1,0 +1,52 @@
+Link to colab: https://colab.research.google.com/drive/1sf4VAMPLgXg3O2zOSLZwx_B87ZNCXaNX?usp=sharing
+
+Description:
+
+This repository contains code for classifying questions as either "Data Query" or "Not a Data Query" using a BERT-based neural network model. The model is trained on a dataset of questions and their corresponding labels, where a "Data Query" question refers to a query related to data analysis or retrieval.
+
+Installations:
+
+To run the code, you'll need to install the following dependencies:
+
+!pip install pandas tensorflow tensorflow_text scikit-learn
+
+
+Dependencies:
+
+pandas: Used for data manipulation and analysis.
+tensorflow: Provides deep learning tools and frameworks.
+tensorflow_text: Extends TensorFlow to support a variety of text processing tasks.
+scikit-learn: Offers machine learning algorithms and tools for classification and evaluation.
+
+
+Usage:
+
+Clone the repository to your local machine.
+Install the required dependencies using the provided command.
+Run the provided Python script to train and evaluate the BERT-based model for question classification.
+Code Overview:
+
+
+
+
+The provided Python code performs the following tasks:
+
+Data Preprocessing:
+
+Splits the dataset into training and testing sets using train_test_split.
+Utilizes BERT preprocessing and encoding layers to generate sentence embeddings.
+
+Model Training:
+
+Constructs a neural network model using BERT layers for text encoding.
+Compiles the model with appropriate loss function and evaluation metrics.
+Trains the model on the training data for a specified number of epochs.
+
+Model Evaluation:
+
+Evaluates the trained model on the testing data to assess its performance.
+Computes classification metrics such as accuracy, precision, and recall.
+Classification and Query Analysis:
+
+Utilizes the trained model to classify new queries into "Data Query" or "Not a Data Query" categories.
+Merges the classification results with the original dataset for further analysis.

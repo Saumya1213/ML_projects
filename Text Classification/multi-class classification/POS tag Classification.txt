@@ -1,0 +1,78 @@
+Link to Colab Notebook: https://colab.research.google.com/drive/101jthddLekZrG2EO0ATZTQiUKn0hnmX1?usp=sharing
+
+Description:
+
+This repository contains code for fine-tuning a BERT-based neural network model to perform part-of-speech (POS) tag classification. The model is trained on a dataset of words annotated with their corresponding POS tags, and it predicts the POS tag for each word in a given sentence. I was experimenting with different pipelines for efficient entity extraction. You can use them or try experimenting your own.
+
+
+Usage:
+
+To use this code, follow these steps:
+
+Clone the repository to your local machine.
+Install the required dependencies using the provided command.
+Run the provided Python script to train and evaluate the BERT-based model for POS tag classification.
+
+
+Requirements:
+
+Python 3.x
+PyTorch
+Transformers library from Hugging Face
+Tokenizers library from Hugging Face
+Pandas
+scikit-learn
+nltk
+fuzzywuzzy
+
+
+Dependencies:
+
+PyTorch: Provides deep learning tools and frameworks.
+Transformers: A library from Hugging Face that provides state-of-the-art pre-trained models for natural language processing tasks.
+Tokenizers: Used for tokenization of text data.
+Pandas: Used for data manipulation and analysis.
+scikit-learn: Offers machine learning algorithms and tools for classification and evaluation.
+nltk: A natural language processing library for tasks such as tokenization, stemming, and POS tagging.
+fuzzywuzzy: A library for fuzzy string matching.
+
+
+Language Models (LLM):
+
+BERT (Bidirectional Encoder Representations from Transformers)
+Tokenizer Model:
+
+BertTokenizerFast from Hugging Face's Transformers library
+Special Tokens:
+
+Additional special tokens are added to the tokenizer for handling POS tag annotations and other linguistic entities.
+
+
+Explanation:
+
+The provided Python code performs the following tasks:
+
+Data Preprocessing:
+
+Reads and preprocesses the input dataset containing words and their corresponding POS tags.
+Tokenizes the words and encodes the POS tags using the provided tokenizer.
+Model Architecture:
+
+Fine-tunes a BERT-based model for sequence classification with a custom classification head.
+Resizes the token embeddings to accommodate additional tokens added to the tokenizer.
+Data Loading:
+
+Splits the dataset into training, validation, and test sets.
+Encodes the text data using the tokenizer and creates PyTorch DataLoader objects for efficient batch processing.
+Model Training:
+
+Trains the fine-tuned BERT model on the training data using PyTorch.
+Evaluates the model's performance on the validation set and saves the best model checkpoint.
+Model Evaluation:
+
+Evaluates the trained model on the test set to assess its generalization performance.
+Computes classification metrics such as accuracy, precision, recall, and F1 score.
+Prediction:
+
+Provides a function to predict the POS tags for input sentences using the trained model.
+Tokenizes the input sentence, generates predictions using the model, and returns the predicted POS tags and their probabilities.
